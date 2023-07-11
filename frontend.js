@@ -45,3 +45,9 @@ profileIcon.addEventListener('mouseout', function () {
   profileIcon.src = originalSrc;
 });
 
+function toggleMenuIcon() {
+  const menuIcon = document.getElementById("menu");
+
+  menuIcon.classList.toggle("cross-icon");
+  menuIcon.classList.toggle("rotate-180");
+}
