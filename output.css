@@ -1117,10 +1117,6 @@ video {
   transition: all 0.5s ease;
 }
 
-#menu:active, a:active, button:active {
-  background-color: transparent;
-}
-
 *::-moz-selection{
   color: #000028;
   background-color: #00ffb9;
@@ -1129,6 +1125,14 @@ video {
 *::selection{
   color: #000028;
   background-color: #00ffb9;
+}
+
+button:focus,
+button:active,
+a:focus,
+a:active {
+  outline: none;
+  background-color: transparent;
 }
 
 /*Prevents initial display of the button when refreshed*/
