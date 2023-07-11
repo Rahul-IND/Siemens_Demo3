@@ -139,9 +139,15 @@ input, select {
     padding: 0;
     transition: all 0.5s ease;
 }
-.focus:outline-none:focus {
-    outline: none;
+#menu:active, a:active, button:active {
+    background-color: transparent;
   }
+  
+
+*::selection{
+    color: #000028;
+    background-color: #00ffb9;
+}
 /*Prevents initial display of the button when refreshed*/
 /* #moveToTopButton.hidden {
     display: none;
