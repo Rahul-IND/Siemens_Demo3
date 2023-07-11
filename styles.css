@@ -145,13 +145,13 @@ input, select {
     background-color: #00ffb9;
 }
 
-button:focus,
+/* button:focus,
 button:active,
 a:focus,
 a:active {
   outline: none;
   background-color: transparent;
-}
+} */
 
 
 /*Prevents initial display of the button when refreshed*/
