@@ -1117,6 +1117,10 @@ video {
   transition: all 0.5s ease;
 }
 
+.focus:outline-none:focus {
+  outline: none;
+}
+
 /*Prevents initial display of the button when refreshed*/
 
 /* #moveToTopButton.hidden {
@@ -1200,7 +1204,7 @@ video {
 
 .cross-icon {
   content: url(cross-icon.svg);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .rotate-180 {
