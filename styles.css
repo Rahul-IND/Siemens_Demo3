@@ -139,11 +139,8 @@ input, select {
     padding: 0;
     transition: all 0.5s ease;
 }
-a:hover {
-    transform: scale(1.5 ) !important;
-  }
-  
-*::selection{
+
+*::selection {
     color: #000028;
     background-color: #00ffb9;
 }
@@ -155,7 +152,7 @@ a:active {
   outline: none;
   background-color: transparent;
 } */
-*{
+* {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -187,26 +184,26 @@ a:active {
 
 
 /* @media only screen and (min-width : 768px) { */
-    /* .hemburger_icon__container {
+/* .hemburger_icon__container {
         display: none;
     } */
 
-    /* .mobile_nav_links__container {
+/* .mobile_nav_links__container {
         display: none;
     } */
 
-    /* .navlinks {
+/* .navlinks {
         display: flex;
         flex-grow: 1;
     } */
 
-    /* .branding {
+/* .branding {
         flex-grow: 1;
         Haven't added this in index.html
     } */
 
 
-    /* .navbar>ul {
+/* .navbar>ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -238,12 +235,14 @@ a:active {
 .displayMenu {
     transform: translateX(0);
 }
+
 .cross-icon {
     content: url(cross-icon.svg);
     transition: transform 0.5s ease;
-  }
-  
-  .rotate-180 {
+}
+
+.rotate-180 {
     transform: rotate(180deg);
-  }
-  
+}
+
+

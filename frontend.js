@@ -52,18 +52,3 @@ function toggleMenuIcon() {
   menuIcon.classList.toggle("cross-icon");
   menuIcon.classList.toggle("rotate-180");
 }
-
-
-
-var images = document.querySelectorAll('.carousel img');
-var currentImage = 0;
-
-function changeImage() {
-  images[currentImage].classList.remove('opacity-100');
-  currentImage = (currentImage + 1) % images.length;
-  images[currentImage].classList.add('opacity-100');
-  setTimeout(changeImage, 2000);
-}
-
-changeImage();
-
