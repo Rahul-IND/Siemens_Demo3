@@ -2,7 +2,7 @@ const menu = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menu.addEventListener("click", () => {
-        mobileMenu.classList.toggle("displayMenu");
+  mobileMenu.classList.toggle("displayMenu");
 })
 
 // Function to scroll to the top of the page
@@ -45,9 +45,25 @@ profileIcon.addEventListener('mouseout', function () {
   profileIcon.src = originalSrc;
 });
 
+// For menu icon and cross icon
 function toggleMenuIcon() {
   const menuIcon = document.getElementById("menu");
 
   menuIcon.classList.toggle("cross-icon");
   menuIcon.classList.toggle("rotate-180");
 }
+
+
+
+var images = document.querySelectorAll('.carousel img');
+var currentImage = 0;
+
+function changeImage() {
+  images[currentImage].classList.remove('opacity-100');
+  currentImage = (currentImage + 1) % images.length;
+  images[currentImage].classList.add('opacity-100');
+  setTimeout(changeImage, 2000);
+}
+
+changeImage();
+

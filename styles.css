@@ -139,7 +139,10 @@ input, select {
     padding: 0;
     transition: all 0.5s ease;
 }
-
+a:hover {
+    transform: scale(1.5 ) !important;
+  }
+  
 *::selection{
     color: #000028;
     background-color: #00ffb9;
@@ -152,6 +155,9 @@ a:active {
   outline: none;
   background-color: transparent;
 } */
+*{
+    -webkit-tap-highlight-color: transparent;
+}
 
 
 /*Prevents initial display of the button when refreshed*/
