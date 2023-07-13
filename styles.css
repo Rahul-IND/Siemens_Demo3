@@ -144,14 +144,6 @@ input, select {
     color: #000028;
     background-color: #00ffb9;
 }
-
-/* button:focus,
-button:active,
-a:focus,
-a:active {
-  outline: none;
-  background-color: transparent;
-} */
 * {
     -webkit-tap-highlight-color: transparent;
 }
@@ -244,5 +236,3 @@ a:active {
 .rotate-180 {
     transform: rotate(180deg);
 }
-
-
