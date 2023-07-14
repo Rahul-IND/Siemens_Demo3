@@ -144,6 +144,7 @@ input, select {
     color: #000028;
     background-color: #00ffb9;
 }
+
 * {
     -webkit-tap-highlight-color: transparent;
 }
@@ -236,3 +237,5 @@ input, select {
 .rotate-180 {
     transform: rotate(180deg);
 }
+
+

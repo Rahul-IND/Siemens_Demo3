@@ -52,3 +52,5 @@ function toggleMenuIcon() {
   menuIcon.classList.toggle("cross-icon");
   menuIcon.classList.toggle("rotate-180");
 }
+
+
