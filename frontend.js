@@ -83,3 +83,40 @@ function autoplayCarousel() {
 window.addEventListener('load', autoplayCarousel);
 
 
+
+
+
+
+
+
+// WebPage animations
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 50;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// JavaScript
+document.addEventListener("DOMContentLoaded", function() {
+  var revealElements = document.querySelectorAll(".revealOnLoad");
+
+  function revealElementsOnLoad() {
+      revealElements.forEach(function(element) {
+          element.classList.add("active");
+      });
+  }
+
+  revealElementsOnLoad();
+});
