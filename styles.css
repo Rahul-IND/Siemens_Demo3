@@ -262,7 +262,7 @@ input, select {
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 .carousel-item {

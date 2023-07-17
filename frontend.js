@@ -110,7 +110,7 @@ window.addEventListener("scroll", reveal);
 
 // JavaScript
 document.addEventListener("DOMContentLoaded", function() {
-  var revealElements = document.querySelectorAll(".revealOnLoad");
+  var revealElements = document.querySelectorAll(".revealLoad");
 
   function revealElementsOnLoad() {
       revealElements.forEach(function(element) {
@@ -118,5 +118,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 
-  revealElementsOnLoad();
+  // Wait for a short delay before adding the active class to allow initial hiding
+  setTimeout(revealElementsOnLoad, 50);
 });

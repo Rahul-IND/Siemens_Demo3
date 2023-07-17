@@ -1299,7 +1299,7 @@ video {
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 
 .carousel-item {
@@ -1490,6 +1490,13 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
