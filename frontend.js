@@ -81,3 +81,5 @@ function autoplayCarousel() {
 
 // Run autoplay carousel when the page loads
 window.addEventListener('load', autoplayCarousel);
+
+
