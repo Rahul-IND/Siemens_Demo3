@@ -121,10 +121,11 @@ input, select {
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url(./Siemens\ Sans\ Roman/Siemens_Sans_Roman.ttf);
 
 @font-face {
     font-family: 'siemensSansRoman';
-    src: url('Siemens\ Sans\ Roman/Siemens_Sans_Roman.ttf') format('truetype');
+    src: url('Fonts/Siemens_Sans_Roman.ttf') format('truetype');
 }
 
 /* nav{
@@ -230,7 +231,7 @@ input, select {
 }
 
 .cross-icon {
-    content: url(cross-icon.svg);
+    content: url(icons/cross-icon.svg);
     transition: transform 0.5s ease;
 }
 
@@ -335,3 +336,5 @@ input, select {
         opacity: 1;
     }
 }
+
+  

@@ -1033,6 +1033,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1049,10 +1053,6 @@ video {
   text-align: center;
 }
 
-.font-siemensSans {
-  font-family: siemensSansRoman, sans-serif;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1061,11 +1061,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -1161,7 +1156,7 @@ video {
 @font-face {
   font-family: 'siemensSansRoman';
 
-  src: url('Siemens\ Sans\ Roman/Siemens_Sans_Roman.ttf') format('truetype');
+  src: url('Fonts/Siemens_Sans_Roman.ttf') format('truetype');
 }
 
 /* nav{
@@ -1274,7 +1269,7 @@ video {
 }
 
 .cross-icon {
-  content: url(cross-icon.svg);
+  content: url(icons/cross-icon.svg);
   transition: transform 0.5s ease;
 }
 
@@ -1510,3 +1505,5 @@ video {
     row-gap: 2rem;
   }
 }
+
+  

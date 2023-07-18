@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        siemensSans: ['siemensSansRoman', 'sans-serif'],
+        custom: ['siemensSans'],
       }
     },
     colors: {

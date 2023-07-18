@@ -33,8 +33,8 @@ document.getElementById('moveToTopButton').addEventListener('click', scrollToTop
 var profileIcon = document.getElementById('profileIcon');
 
 // Store the original source and the new source
-var originalSrc = 'profile_icon_white.svg';
-var newSrc = 'profile_icon_blue.svg';
+var originalSrc = 'icons/profile-icon-white.svg';
+var newSrc = 'icons/profile-icon-blue.svg';
 
 // Add event listeners for hover and mouseout
 profileIcon.addEventListener('mouseover', function () {
@@ -100,6 +100,12 @@ function reveal() {
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
+
+      // Check if it's a child div with the specified classes
+      var childDivs = reveals[i].querySelectorAll(".max-md\\:reveal, .max-md\\:fade-bottom");
+      for (var j = 0; j < childDivs.length; j++) {
+        childDivs[j].classList.add("active");
+      }
     } else {
       reveals[i].classList.remove("active");
     }
@@ -109,15 +115,21 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 // JavaScript
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var revealElements = document.querySelectorAll(".revealLoad");
 
   function revealElementsOnLoad() {
-      revealElements.forEach(function(element) {
-          element.classList.add("active");
-      });
+    revealElements.forEach(function (element) {
+      element.classList.add("active");
+    });
   }
 
   // Wait for a short delay before adding the active class to allow initial hiding
   setTimeout(revealElementsOnLoad, 50);
 });
+
+
+
+
+
+
