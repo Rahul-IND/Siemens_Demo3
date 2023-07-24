@@ -69,14 +69,17 @@
         transform translate-x-[-100%] transition-all duration-500 sm:duration-300 ease-in-out 
         z-0" id="mobileMenu">
             <ul>
-                <li class="px-10 py-4 text-white hover:bg-blue1"><a href="index.html" class="w-full">Home</a></li>
-                <li class="px-10 py-4 text-white hover:bg-blue1"><a href="about.html" class="w-full">About</a></li>
-                <li class="px-10 py-4 text-white hover:bg-blue1"><a href="services.html" class="w-full">Services</a></li>
-                <li class="px-10 py-4 text-white hover:bg-blue1"><a href="contact.html" class="w-full">Contact</a></li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="index.html" class="block w-full py-4">Home</a></li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="about.html" class="block w-full py-4">About</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="services.html"
+                        class="block w-full py-4">Services</a></li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="contact.html" class="block w-full py-4">Contact</a>
+                </li>
                 <li class="px-10 py-4 text-white hover:bg-blue1 hover:scale-105">
                     <div class="flex justify-between flex-grow">
                         <input type="text" class="searchBox searchInput 
-                            w-2/3 max-w-1/2
+                             w-2/3 max-w-1/2
                             px-4 py-2 pr-10 
                             bg-gray-700 text-blue 
                             rounded-3xl 
@@ -91,10 +94,24 @@
         </section>
     </nav>
 
+    <!-- Move to Top button -->
+    <button id="moveToTopButton" class="hidden 
+        fixed bottom-8 right-8 p-3 
+        bg-blue2
+        rounded-full shadow border rounded-full border-gray
+        transition-transform duration-300 hover:scale-105 active:scale-90 focus:outline-none 
+        z-10">
+        <svg class="w-6 h-6 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Link boxes in grid -->
     <header class="mb-20 p-10">
         <div class="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3 
         gap-x-4 gap-y-5 2xl:gap-x-8 2xl:gap-y-8 
         revealLoad fade-left" id="gridContainer">
+            <!-- Box 1 -->
             <div class="h-auto 
             bg-blue1 text-white
             hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan ease animate-on-scroll
@@ -119,7 +136,7 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- Box 2 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
@@ -142,7 +159,7 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- Box 3 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Suspendisse a interdum lorem</h3>
@@ -165,6 +182,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 4 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">non fringilla efficitur</h3>
@@ -187,6 +205,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 5 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Nam porttitor risustfelis fermentum</h3>
@@ -209,6 +228,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 6 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">ehicula pellentesque</h3>
@@ -231,6 +251,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 7 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Lorem ipsum dolor</h3>
@@ -253,6 +274,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 8 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
@@ -275,6 +297,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 9 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Lorem ipsum dolor</h3>
@@ -297,7 +320,7 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- Box 10 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
@@ -320,7 +343,7 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- Box 11 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Suspendisse a interdum lorem</h3>
@@ -343,6 +366,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Box 12 -->
             <div
                 class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
                 <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">non fringilla efficitur</h3>
@@ -367,11 +391,8 @@
             </div>
         </div>
     </header>
-    <!-- <section class="h-20 bg-white">
-        <div class="container h-full border border-0 flex items-center justify-center">
-            Content
-        </div>
-    </section> -->
+
+    <!-- Carousel -->
     <div class="carousel-container reveal fade-right">
         <div id="carousel" class="carousel">
             <div class="carousel-inner">
@@ -391,19 +412,9 @@
 
 
 
-    <!-- Move to Top button -->
-    <button id="moveToTopButton" class="hidden 
-        fixed bottom-8 right-8 p-3 
-        bg-blue2
-        rounded-full shadow border rounded-full border-gray
-        transition-transform duration-300 hover:scale-105 active:scale-90 focus:outline-none 
-        z-10">
-        <svg class="w-6 h-6 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
-        </svg>
-    </button>
 
-    <!-- Haven't written leading-6 here -->
+
+    <!-- Home page text. Haven't written leading-6 here -->
     <section class="mt-10 mb-72 px-10 
         text-white text-base text-justify text-ellipsis tracking-wide leading-7 font-thin overflow-hidden 
         lg:text-lg 
@@ -428,6 +439,8 @@
         </p>
 
     </section>
+
+    <!-- Profile image and PowerBI statistics -->
     <section class="mb-4 px-10 py-20 
     text-white bg-white 
     flex max-md:flex-col max-md:justify-around md:justify-between items-center  
@@ -447,9 +460,12 @@
         </div>
     </section>
 
+    <!-- Horizontal line -->
     <div class="h-px w-full 
     mb-80 
     bg-white text-white"></div>
+
+    <!-- Footer for other links -->
     <footer class="p-10 text-white reveal fade-right">
         <div>
             <h3 class="mb-16 text-3xl text-center font-bold">Other Links</h3>
