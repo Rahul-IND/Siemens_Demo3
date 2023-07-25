@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Siemens COBRA</title>
     <link rel="icon" type="image/png" href="icons/siemens-favicon.png">
-    <link rel="stylesheet" href="output.css">
+    <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
@@ -42,7 +42,7 @@
                     <input type="text" class="searchBox searchInput 
                         rounded-3xl px-4 py-2 pr-10 
                         bg-gray-700 text-blue 
-                        focus:outline-none focus:bg-white focus:text-white-900" placeholder="Search"
+                        focus:outline-none focus:bg-blue1 hover:bg-blue2 focus:text-white-900" placeholder="Search"
                         style="z-index: 1;">
 
                     <button type="submit" class="searchSubmit 
@@ -82,7 +82,7 @@
                             px-4 py-2 pr-10 
                             bg-gray-700 text-blue 
                             rounded-3xl 
-                            focus:outline-none focus:bg-white focus:text-white-900 
+                            focus:outline-none focus:bg-blue1 hover:bg-blue2 focus:text-white-900 
                             sm:max-w-xs md:max-w-sm" placeholder="Search">
                         <button type="submit" class="searchSubmit">
                             <img src="icons/search-icon-white.svg" alt="">
@@ -148,207 +148,119 @@
     </button>
     <section class="mb-20 p-10 text-white reveal fade-right">
         <div>
-            <h3 class="mb-12 text-3xl text-center font-bold">Our Projects</h3>
+            <h3 class="mb-12 text-3xl text-center font-extrabold">Our Projects</h3>
             <div class="container mx-auto py-10">
                 <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Card 1 -->
-                    <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <div role="link" href="egypt.html"
+                        class="group bg-blue1 hover:bg-blue2 cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
                         <div class="relative">
                             <img src="images/egypt.jpg" alt="Image 1"
                                 class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-xl text-blue font-semibold mb-2">Egypt</h3>
-                            <p class="text-blue line-clamp-3">
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Egypt
+                            </h3>
+                            <p class="mb-8 text-white line-clamp-3">
                                 <!-- Your text content here -->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
                                 laoreet varius.
-                                Duis vehicula sem vel tincidunt facilisis. Nunc euismod, nulla vitae porttitor euismod,
-                                elit nisl
-                                euismod est, vel blandit nulla est at libero. Nulla ut metus euismod, luctus erat nec,
-                                tincidunt
-                                massa. Vivamus laoreet posuere dui eget posuere. Vivamus convallis, nisi at eleifend
-                                posuere, ligula
-                                metus venenatis ex, a tincidunt lacus ligula vel mi.
                             </p>
-                            <!-- <button class="text-blue mt-2 underline focus:outline-none underline"
-                                onclick="toggleShowMore(1)">Show More</button> -->
-                            <div class="mt-2 focus:outline-none"><a href="egypt.html" class="text-blue underline"
-                                    target="_blank">Show more</a>
+                            <div class=" p-4 float-right"><img src="icons/arrow-light.svg" alt="" class="arrow-icon">
                             </div>
-                            <p class="text-blue line-clamp-3 hidden" id="showMoreContent1">
-                                <!-- Additional text content -->
-                                Vivamus eget purus id magna vehicula placerat at vel felis. Ut congue consectetur lacus,
-                                faucibus
-                                interdum nibh. Quisque euismod eleifend eros, vel bibendum nisi efficitur vitae. Nullam
-                                sed massa
-                                erat. Etiam accumsan, turpis a egestas efficitur, nisl justo fringilla elit, auctor
-                                pellentesque ipsum
-                                velit id nunc.
-                            </p>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <div role="link" href="egypt.html"
+                        class="group bg-blue1 hover:bg-blue2 cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
                         <div class="relative">
                             <img src="images/singapore.jpg" alt="Image 1"
                                 class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-xl text-blue font-semibold mb-2">Singapore</h3>
-                            <p class="text-blue line-clamp-3">
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Singapore
+                            </h3>
+                            <p class="mb-8 text-white line-clamp-3">
                                 <!-- Your text content here -->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
                                 laoreet varius.
-                                Duis vehicula sem vel tincidunt facilisis. Nunc euismod, nulla vitae porttitor euismod,
-                                elit nisl
-                                euismod est, vel blandit nulla est at libero. Nulla ut metus euismod, luctus erat nec,
-                                tincidunt
-                                massa. Vivamus laoreet posuere dui eget posuere. Vivamus convallis, nisi at eleifend
-                                posuere, ligula
-                                metus venenatis ex, a tincidunt lacus ligula vel mi.
                             </p>
-                            <div class="mt-2 focus:outline-none"><a href="egypt.html" class="text-blue underline"
-                                    target="_blank">Show more</a>
+                            <div class=" p-4 float-right"><img src="icons/arrow-light.svg" alt="" class="arrow-icon">
                             </div>
-                            <p class="text-blue line-clamp-3 hidden" id="showMoreContent1">
-                                <!-- Additional text content -->
-                                Vivamus eget purus id magna vehicula placerat at vel felis. Ut congue consectetur lacus,
-                                faucibus
-                                interdum nibh. Quisque euismod eleifend eros, vel bibendum nisi efficitur vitae. Nullam
-                                sed massa
-                                erat. Etiam accumsan, turpis a egestas efficitur, nisl justo fringilla elit, auctor
-                                pellentesque ipsum
-                                velit id nunc.
-                            </p>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <div role="link" href="egypt.html"
+                        class="group bg-blue1 hover:bg-blue2 cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
                         <div class="relative">
                             <img src="images/romania.jpg" alt="Image 1"
                                 class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-xl text-blue font-semibold mb-2">Romania</h3>
-                            <p class="text-blue line-clamp-3">
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Romania
+                            </h3>
+                            <p class="mb-8 text-white line-clamp-3">
                                 <!-- Your text content here -->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
                                 laoreet varius.
-                                Duis vehicula sem vel tincidunt facilisis. Nunc euismod, nulla vitae porttitor euismod,
-                                elit nisl
-                                euismod est, vel blandit nulla est at libero. Nulla ut metus euismod, luctus erat nec,
-                                tincidunt
-                                massa. Vivamus laoreet posuere dui eget posuere. Vivamus convallis, nisi at eleifend
-                                posuere, ligula
-                                metus venenatis ex, a tincidunt lacus ligula vel mi.
                             </p>
-                            <div class="mt-2 focus:outline-none"><a href="egypt.html" class="text-blue underline"
-                                    target="_blank">Show more</a>
+                            <div class=" p-4 float-right"><img src="icons/arrow-light.svg" alt="" class="arrow-icon">
                             </div>
-                            <p class="text-blue line-clamp-3 hidden" id="showMoreContent1">
-                                <!-- Additional text content -->
-                                Vivamus eget purus id magna vehicula placerat at vel felis. Ut congue consectetur lacus,
-                                faucibus
-                                interdum nibh. Quisque euismod eleifend eros, vel bibendum nisi efficitur vitae. Nullam
-                                sed massa
-                                erat. Etiam accumsan, turpis a egestas efficitur, nisl justo fringilla elit, auctor
-                                pellentesque ipsum
-                                velit id nunc.
-                            </p>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <div role="link" href="egypt.html"
+                        class="group bg-blue1 hover:bg-blue2 cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
                         <div class="relative">
-                            <img src="images/myanmar.jpg" alt="Image 1"
+                            <img src="images/united-states.jpg" alt="Image 1"
                                 class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-xl text-blue font-semibold mb-2">Myanmar</h3>
-                            <p class="text-blue line-clamp-3">
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">United States
+                            </h3>
+                            <p class="mb-8 text-white line-clamp-3">
                                 <!-- Your text content here -->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
                                 laoreet varius.
-                                Duis vehicula sem vel tincidunt facilisis. Nunc euismod, nulla vitae porttitor euismod,
-                                elit nisl
-                                euismod est, vel blandit nulla est at libero. Nulla ut metus euismod, luctus erat nec,
-                                tincidunt
-                                massa. Vivamus laoreet posuere dui eget posuere. Vivamus convallis, nisi at eleifend
-                                posuere, ligula
-                                metus venenatis ex, a tincidunt lacus ligula vel mi.
                             </p>
-                            <div class="mt-2 focus:outline-none"><a href="egypt.html" class="text-blue underline"
-                                    target="_blank">Show more</a>
+                            <div class=" p-4 float-right"><img src="icons/arrow-light.svg" alt="" class="arrow-icon">
                             </div>
-                            <p class="text-blue line-clamp-3 hidden" id="showMoreContent1">
-                                <!-- Additional text content -->
-                                Vivamus eget purus id magna vehicula placerat at vel felis. Ut congue consectetur lacus,
-                                faucibus
-                                interdum nibh. Quisque euismod eleifend eros, vel bibendum nisi efficitur vitae. Nullam
-                                sed massa
-                                erat. Etiam accumsan, turpis a egestas efficitur, nisl justo fringilla elit, auctor
-                                pellentesque ipsum
-                                velit id nunc.
-                            </p>
                         </div>
                     </div>
                     <!-- Card 5 -->
-                    <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <div role="link" href="egypt.html"
+                        class="group bg-blue1 hover:bg-blue2 cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
                         <div class="relative">
                             <img src="images/neom.jpg" alt="Image 1"
                                 class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-xl text-blue font-semibold mb-2">NEOM</h3>
-                            <p class="text-blue line-clamp-3">
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">NEOM
+                            </h3>
+                            <p class="mb-8 text-white line-clamp-3">
                                 <!-- Your text content here -->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
                                 laoreet varius.
-                                Duis vehicula sem vel tincidunt facilisis. Nunc euismod, nulla vitae porttitor euismod,
-                                elit nisl
-                                euismod est, vel blandit nulla est at libero. Nulla ut metus euismod, luctus erat nec,
-                                tincidunt
-                                massa. Vivamus laoreet posuere dui eget posuere. Vivamus convallis, nisi at eleifend
-                                posuere, ligula
-                                metus venenatis ex, a tincidunt lacus ligula vel mi.
                             </p>
-                            <div class="mt-2 focus:outline-none"><a href="egypt.html" class="text-blue underline"
-                                    target="_blank">Show more</a>
+                            <div class=" p-4 float-right"><img src="icons/arrow-light.svg" alt="" class="arrow-icon">
                             </div>
-                            <p class="text-blue line-clamp-3 hidden" id="showMoreContent1">
-                                <!-- Additional text content -->
-                                Vivamus eget purus id magna vehicula placerat at vel felis. Ut congue consectetur lacus,
-                                faucibus
-                                interdum nibh. Quisque euismod eleifend eros, vel bibendum nisi efficitur vitae. Nullam
-                                sed massa
-                                erat. Etiam accumsan, turpis a egestas efficitur, nisl justo fringilla elit, auctor
-                                pellentesque ipsum
-                                velit id nunc.
-                            </p>
                         </div>
                     </div>
                     <!-- Card 6 -->
                     <div
-                        class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-500 relative">
+                        class="group bg-white shadow-lg  overflow-hidden hover:shadow-xl transition duration-500 relative">
                         <!-- Placeholder Image as the Background with Faded Effect -->
                         <img src="images/placeholder.jpg" alt="Placeholder Image"
-                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-50 group-hover:opacity-80">
+                            class=" w-full h-full object-cover transition-opacity duration-500 opacity-50 group-hover:opacity-80">
 
                         <!-- "And Many More..." Text in the Center -->
                         <div class="absolute inset-0 flex justify-center items-center">
-                            <h3 class="text-2xl text-blue font-semibold">And Many More...</h3>
+                            <h3 class="text-2xl text-blue font-bold">And Many More...</h3>
                         </div>
                     </div>
                 </div>
+                <!-- Card 2 and other cards can be added similarly -->
             </div>
-            <!-- Card 2 and other cards can be added similarly -->
-        </div>
     </section>
     <footer class="p-10 text-white reveal fade-right">
         <div>
@@ -387,7 +299,39 @@
     <script src="common.js"></script>
     <script src="app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Get all the div elements with class 'group'
+        var groupDivs = document.querySelectorAll('.group');
 
+        // Store the original source and the new source
+        var originalSrc = 'icons/arrow-light.svg';
+        var newSrc = 'icons/arrow-dark.svg';
+
+        // Add event listeners to each group div
+        groupDivs.forEach((groupDiv) => {
+            // Find the arrowIcon inside the current groupDiv
+            var arrowIcon = groupDiv.querySelector('.arrow-icon');
+
+            groupDiv.addEventListener('mouseover', function () {
+                arrowIcon.src = newSrc;
+            });
+
+            groupDiv.addEventListener('mouseout', function () {
+                arrowIcon.src = originalSrc;
+            });
+        });
+
+        // Add click event to the group div to navigate to the specified URL
+        groupDivs.forEach((groupDiv) => {
+            groupDiv.addEventListener('click', function () {
+                var href = groupDiv.getAttribute('href');
+                if (href) {
+                    window.location.href = href;
+                }
+            });
+        });
+
+    </script>
 
 </body>
 

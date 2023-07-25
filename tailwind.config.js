@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './about.html'],
+  content: ['./index.html', './about.html', './services.html', './contact.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -14,6 +14,7 @@ module.exports = {
       'white' : '#ffffff',
       'textwhite' : '#fff',
       'cyan' : '#00ffb9',
+      'cyan1' : '#00cccc',
       'gray' :'#B2BEB5',
       
     }
