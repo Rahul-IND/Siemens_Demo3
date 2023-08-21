@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './about.html', './services.html', './contact.html'],
+  content: ['./index.html', './services.html', './about.html', './experts.html', './branch.html', './ocs.html', './links.html', './layout-design.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -21,7 +21,7 @@ module.exports = {
   },
   plugins: [
     // ...
-    require('@tailwindcss/aspect-ratio'),
+    // require('@tailwindcss/aspect-ratio'),
   ],
 }
 

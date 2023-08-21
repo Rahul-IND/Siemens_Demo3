@@ -25,7 +25,7 @@
     z-10" id="gradient1">
         <div class="branding grow">
             <a href="index.html">
-                <img src="icons/siemens-logo.svg" alt="Siemens Logo" role="button">
+                <img src="icons/siemens-cobra.svg" alt="Siemens Logo" role="button">
             </a>
         </div>
         <ul class="navlinks
@@ -33,22 +33,22 @@
         flex justify-between items-center flex-row grow        
         text-white
         max-md:hidden">
-            <li><a href="about.html" class="hover:text-cyan">About</a></li>
             <li><a href="services.html" class="hover:text-cyan">Services</a></li>
-            <li><a href="contact.html" class="hover:text-cyan">Contact</a></li>
+            <li><a href="about-ocs.html" class="hover:text-cyan">OCS</a></li>
+            <li><a href="experts.html" class="hover:text-cyan">Experts</a></li>
             <li class="px-10 py-4 
             text-white 
             hover:scale-105">
+
                 <div class="relative">
                     <input type="text" class="searchBox searchInput 
                         rounded-3xl px-4 py-2 pr-10 
                         bg-gray-700 text-blue 
-                        focus:outline-none focus:bg-white focus:text-white-900" placeholder="Search"
-                        style="z-index: 1;">
+                        focus:outline-none focus:bg-white focus:text-white-900 z-10" placeholder="Search">
 
                     <button type="submit" class="searchSubmit 
                     absolute top-0 right-0 
-                    mt-2 mr-3" style="z-index: 2;">
+                    mt-2 mr-3 z-20">
                         <img src="icons/search-icon-black.svg" alt="">
                     </button>
                 </div>
@@ -70,11 +70,11 @@
         z-0" id="mobileMenu">
             <ul>
                 <li class="px-10 text-white hover:bg-blue1"><a href="index.html" class="block w-full py-4">Home</a></li>
-                <li class="px-10 text-white hover:bg-blue1"><a href="about.html" class="block w-full py-4">About</a>
-                </li>
                 <li class="px-10 text-white hover:bg-blue1"><a href="services.html"
                         class="block w-full py-4">Services</a></li>
-                <li class="px-10 text-white hover:bg-blue1"><a href="contact.html" class="block w-full py-4">Contact</a>
+                <li class="px-10 text-white hover:bg-blue1"><a href="about-ocs.html" class="block w-full py-4">OCS</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="experts.html" class="block w-full py-4">Experts</a>
                 </li>
                 <li class="px-10 py-4 text-white hover:bg-blue1 hover:scale-105">
                     <div class="flex justify-between flex-grow">
@@ -108,101 +108,150 @@
     <header class="mb-20 p-10 text-white revealLoad fade-left">
         <h3 class="mb-16 text-3xl text-center font-extrabold">Services</h3>
         <div class="container mx-auto py-10">
-            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Card 1 -->
-                <div role="link" href="www.google.com"
-                    class="group bg-blue1 hover:bg-blue2 shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
-                    <div class="relative">
-                        <img src="images/OCS.webp" alt="Image 1"
-                            class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">OCS Layout Design</h3>
-                        <p class="text-white pb-2.5">
-                            <!-- Your text content here -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
-                            laoreet varius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis incidunt laboriosam veritatis voluptate magnam obcaecati, perspiciatis quidem. 
-                        </p>
-                        <!-- Use class in paragraph element to display only first three lines -->
-                    </div>
+                <div
+                    class="group divLink bg-blue1 hover:bg-blue2 shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <a href="https://www.mobility.siemens.com/global/en/portfolio/rail/electrification/contact-lines.html"
+                        target="_blank">
+                        <div class="relative">
+                            <img src="images/contact-line.jpg" alt="Image 1"
+                                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">OCS Layout Design</h3>
+                            <p class="text-sm text-white">
+                                <!-- Your text content here -->
+                                The success of a contact-line system is critically dependent on its dynamic interaction
+                                with
+                                the pantograph. With state-of-the-art IT systems and software tools developed in-house –
+                                like Sicat Master and Sicat Dynamic – we simulate and analyze the efficiency of the
+                                entire
+                                system in advance. Connections with reliable, corrosion-resistant, and low-maintenance
+                                components ensure the maximum efficiency of contact lines for mass transit and main-line
+                                railways.
+                            </p>
+                            <!-- Use class in paragraph element to display only the first three lines -->
+                            <div class="relative py-8">
+                                <img src="icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- Card 2 -->
                 <div
-                    class="group bg-blue1 hover:bg-blue2 shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
-                    <div class="relative">
-                        <img src="images/electrification.jpg" alt="Image 1"
-                            class="w-full h-48 object-stretch transition-transform transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Electrification</h3>
-                        <p class="text-white">
-                            <!-- Your text content here -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
-                            laoreet varius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis incidunt laboriosam veritatis voluptate magnam obcaecati, perspiciatis quidem. 
-                        </p>
-                    </div>
+                    class="group divLink bg-blue1 hover:bg-blue2 shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <a href="https://www.mobility.siemens.com/global/en/portfolio/rail/electrification/ac-traction-power-supply.html"
+                        target="_blank">
+                        <div class="relative">
+                            <img src="images/ac.jpg" alt="Image 1"
+                                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">AC Traction Power Supply
+                            </h3>
+                            <p class="text-sm text-white">
+                                <!-- Your text content here -->
+                                Our comprehensive product family provides you with an optimal solution for every task
+                                related to your AC traction power supply. Whether it is high-voltage switchgear,
+                                protection
+                                technology, or converters, you’re guaranteed consistently outstanding quality with
+                                seamlessly coordinated components. You’ll benefit by saving resources in the planning
+                                and
+                                operation of your AC traction power supply – right from the start.
+                            </p>
+                            <!-- Use class in paragraph element to display only the first three lines -->
+                            <div class="relative py-8">
+                                <img src="icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- Card 3 -->
                 <div
-                    class="group bg-blue1 hover:bg-blue2 shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
-                    <div class="relative">
-                        <img src="images/signalling.png" alt="Image 1"
-                            class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Signalling</h3>
-                        <p class="text-white">
-                            <!-- Your text content here -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
-                            laoreet varius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis incidunt laboriosam veritatis voluptate magnam obcaecati, perspiciatis quidem. 
-                        </p>
-                    </div>
+                    class="group divLink bg-blue1 hover:bg-blue2 shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <a href="https://www.mobility.siemens.com/global/en/portfolio/rail/electrification/dc-traction-power-supply.html"
+                        target="_blank">
+                        <div class="relative">
+                            <img src="images/dc.jpg" alt="Image 1"
+                                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">DC Traction Power Supply
+                            </h3>
+                            <p class="text-sm text-white">
+                                <!-- Your text content here -->
+                                Reduce costs and save resources using efficient, resilient traction power supply
+                                systems.
+                                Our end-to-end modular portfolio of converters, DC switchgear, and protection systems
+                                lets
+                                you operate your rail systems with confidence – and with top performance, efficiency,
+                                and
+                                safety. Benefit from our decades of experience in engineering, construction, and
+                                commissioning of DC traction power supply systems. We provide all the services you need
+                                from
+                                a single source.
+                            </p>
+                            <!-- Use class in paragraph element to display only the first three lines -->
+                            <div class="relative py-8">
+                                <img src="icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- Card 4 -->
                 <div
-                    class="group bg-blue1 hover:bg-blue2 shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
-                    <div class="relative">
-                        <img src="images/quality.png" alt="Image 1"
-                            class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Quality</h3>
-                        <p class="text-white">
-                            <!-- Your text content here -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
-                            laoreet varius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis incidunt laboriosam veritatis voluptate magnam obcaecati, perspiciatis quidem. 
-                        </p>
-                    </div>
+                    class="group divLink bg-blue1 hover:bg-blue2 shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <a href="https://www.mobility.siemens.com/global/en/portfolio/rail/electrification/network-control-for-rail-electrification.html"
+                        target="_blank">
+                        <div class="relative">
+                            <img src="images/nc.jpg" alt="Image 1"
+                                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Network Control
+                            </h3>
+                            <p class="text-sm text-white">
+                                <!-- Your text content here -->
+                                Our network control for rail electrification enables your railway personnel to quickly
+                                restore substation functionality in the event of malfunctions. Be confident in your
+                                actions and flexible in your reactions in any situation – with our highly available,
+                                proven, and advanced operational IT that features automation, field equipment, hot
+                                standby, and intelligent multi-monitoring solutions.
+                            </p>
+                            <!-- Use class in paragraph element to display only the first three lines -->
+                            <div class="relative py-8">
+                                <img src="icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- Card 5 -->
                 <div
-                    class="group bg-blue1 hover:bg-blue2 shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
-                    <div class="relative">
-                        <img src="images/neom.jpg" alt="Image 1"
-                            class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Ramps</h3>
-                        <p class="text-white">
-                            <!-- Your text content here -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus vitae magna
-                            laoreet varius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis incidunt laboriosam veritatis voluptate magnam obcaecati, perspiciatis quidem. 
-                        </p>
-                        <!-- <div class="mt-2 focus:outline-none"><a href="egypt.html"
-                                class="text-cyan1 group-hover:text-cyan underline" target="_blank">Show more</a>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="group bg-white shadow-lg  overflow-hidden hover:shadow-xl transition duration-500 relative">
-                    <!-- Placeholder Image as the Background with Faded Effect -->
-                    <img src="images/placeholder.jpg" alt="Placeholder Image"
-                        class=" w-full h-full object-cover transition-opacity duration-500 opacity-50 group-hover:opacity-80">
-
-                    <!-- "And Many More..." Text in the Center -->
-                    <div class="absolute inset-0 flex justify-center items-center">
-                        <h3 class="text-2xl text-blue font-bold">And Many More...</h3>
-                    </div>
+                    class="group divLink bg-blue1 hover:bg-blue2 shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+                    <a href="https://www.siemens.com/global/en/search.html?q=System+Engineering&originLanguage=EN&originRegion=GLOBAL"
+                        target="_blank">
+                        <div class="relative">
+                            <img src="images/system-engineering.jpg" alt="Image 1"
+                                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">System Engineering
+                            </h3>
+                            <p class="text-sm text-white">
+                                <!-- Your text content here -->
+                                Our network control for rail electrification enables your railway personnel to quickly
+                                restore substation functionality in the event of malfunctions. Be confident in your
+                                actions and flexible in your reactions in any situation – with our highly available,
+                                proven, and advanced operational IT that features automation, field equipment, hot
+                                standby, and intelligent multi-monitoring solutions.
+                            </p>
+                            <!-- Use class in paragraph element to display only the first three lines -->
+                            <div class="relative py-8">
+                                <img src="icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -236,40 +285,47 @@
                     <a href="https://myid.siemens.com/as/9oHjuGsjD2/resume/as/authorization.ping?zone=public"
                         target="_blank"><img src="icons/web-icon.svg" class="inline">&nbsp;Siemens Hello</a>
                 </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="ocs.html" target="_blank"><img src="icons/web-icon.svg" class="inline">&nbsp;COBRA-OCS</a>
+                </li> 
             </ul>
         </div>
     </footer>
-    <script src="common.js"></script>
-    <script src="app.js"></script>
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/move-to-top.js"></script>
+    <script src="javascripts/profile-icon.js"></script>
+    <script src="javascripts/reveal-revealLoad.js"></script>
+    <script src="javascripts/searchbox.js"></script>
+    <script src="javascripts/div-link.js"></script>
+    <script src="javascripts/arrow.js"></script>
     <script>
-        function toggleShowMore(cardNumber) {
-            const showMoreContent = document.getElementById(`showMoreContent${cardNumber}`);
-            if (showMoreContent) {
-                showMoreContent.classList.toggle("hidden");
-            }
-        }
+        // function toggleShowMore(cardNumber) {
+        //     const showMoreContent = document.getElementById(`showMoreContent${cardNumber}`);
+        //     if (showMoreContent) {
+        //         showMoreContent.classList.toggle("hidden");
+        //     }
+        // }
 
         // Get all the div elements with class 'group'
-        var groupDivs = document.querySelectorAll('.group');
+        // var groupDivs = document.querySelectorAll('.group');
 
         // Store the original source and the new source
-        var originalSrc = 'icons/arrow-light.svg';
-        var newSrc = 'icons/arrow-dark.svg';
+        // var originalSrc = 'icons/arrow-light.svg';
+        // var newSrc = 'icons/arrow-dark.svg';
 
         // Add event listeners to each group div
-        groupDivs.forEach((groupDiv) => {
+        // groupDivs.forEach((groupDiv) => {
             // Find the arrowIcon inside the current groupDiv
-            var arrowIcon = groupDiv.querySelector('.arrow-icon');
+            // var arrowIcon = groupDiv.querySelector('.arrow-icon');
 
-            groupDiv.addEventListener('mouseover', function () {
-                arrowIcon.src = newSrc;
-            });
+            // groupDiv.addEventListener('mouseover', function () {
+            //     arrowIcon.src = newSrc;
+            // });
 
-            groupDiv.addEventListener('mouseout', function () {
-                arrowIcon.src = originalSrc;
-            });
-        });
-
+            // groupDiv.addEventListener('mouseout', function () {
+            //     arrowIcon.src = originalSrc;
+            // });
+        // });
     </script>
 </body>
 

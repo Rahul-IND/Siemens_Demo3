@@ -1,0 +1,361 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    /* border:0; */
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url(./Siemens\ Sans\ Roman/Siemens_Sans_Roman.ttf);
+
+@font-face {
+    font-family: 'siemensSansRoman';
+    src: url('Fonts/Siemens_Sans_Roman.ttf') format('truetype');
+}
+
+/* nav{
+    border-bottom: 1px solid gray;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 1;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::selection {
+    color: #000028;
+    background-color: #00ffb9;
+}
+
+/* * {
+    -webkit-tap-highlight-color: transparent;
+} */
+
+
+/*Prevents initial display of the button when refreshed*/
+/* #moveToTopButton.hidden {
+    display: none;
+} */
+
+/*Gradient color for navbar*/
+#gradient1 {
+    background-image: linear-gradient(to bottom right, #000028, #00ffb9);
+}
+
+/*Transition for link boxes*/
+/* .grid>div {
+    transition: all 0.4s ease;
+} */
+
+/* .grid>div:hover {
+    transform: scale(1.05);
+} */
+
+/* .navlinks {
+    display: none;
+} */
+
+
+
+
+/* @media only screen and (min-width : 768px) { */
+/* .hemburger_icon__container {
+        display: none;
+    } */
+
+/* .mobile_nav_links__container {
+        display: none;
+    } */
+
+/* .navlinks {
+        display: flex;
+        flex-grow: 1;
+    } */
+
+/* .branding {
+        flex-grow: 1;
+        Haven't added this in index.html
+    } */
+
+
+/* .navbar>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+/* } */
+
+/* MOBILE VIEW */
+.mobile_nav_links__container {
+    /* background-color: #000028; */
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* position: fixed; */
+    /* inset: 0; */
+    /* padding-top: 50px; */
+    /* padding-left: 40px; */
+    /* transform: translateX(-100%); */
+    /* transition: all 500ms ease-in-out; */
+}
+
+.mobile_nav_links__container>ul>li {
+    /* padding: 15px 0px; */
+}
+
+.mobile_nav_links__container>ul>li>a {
+    /* color: #c1c1c1; */
+}
+
+.displayMenu {
+    transform: translateX(0);
+}
+
+.cross-icon {
+    content: url(icons/cross-icon.svg);
+    transition: transform 0.5s ease;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    width: 100%;
+    max-height: auto;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    /* max-height: 500px; */
+    object-fit:contain;
+}
+
+
+/* Animations */
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Used in ocs.html */
+
+.custom-height {
+    height: calc(100vh - 64px);
+    /* Subtract 20px from the height of the viewport (h-screen) */
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Bounce animation class */
+.bounceAnimation {
+    animation: bounce 1s 2;
+    /* Bounces twice (1 second each bounce) */
+}

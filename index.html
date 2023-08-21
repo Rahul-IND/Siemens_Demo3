@@ -14,7 +14,6 @@
 <body class="bg-blue font-siemensSans">
     <nav class="navbar
     h-16
-    mb-2
     px-10
     sticky
     top-0
@@ -25,7 +24,7 @@
     z-10" id="gradient1">
         <div class="branding grow">
             <a href="index.html">
-                <img src="icons/siemens-logo.svg" alt="Siemens Logo" role="button">
+                <img src="icons/siemens-cobra.svg" alt="Siemens Logo" role="button">
             </a>
         </div>
         <ul class="navlinks
@@ -33,13 +32,12 @@
         flex justify-between items-center flex-row grow        
         text-white
         max-md:hidden">
-            <li><a href="about.html" class="hover:text-cyan">About</a></li>
             <li><a href="services.html" class="hover:text-cyan">Services</a></li>
-            <li><a href="contact.html" class="hover:text-cyan">Contact</a></li>
+            <li><a href="about-ocs.html" class="hover:text-cyan">OCS</a></li>
+            <li><a href="experts.html" class="hover:text-cyan">Experts</a></li>
             <li class="px-10 py-4 
             text-white 
             hover:scale-105">
-
                 <div class="relative">
                     <input type="text" class="searchBox searchInput 
                         rounded-3xl px-4 py-2 pr-10 
@@ -70,11 +68,11 @@
         z-0" id="mobileMenu">
             <ul>
                 <li class="px-10 text-white hover:bg-blue1"><a href="index.html" class="block w-full py-4">Home</a></li>
-                <li class="px-10 text-white hover:bg-blue1"><a href="about.html" class="block w-full py-4">About</a>
-                </li>
                 <li class="px-10 text-white hover:bg-blue1"><a href="services.html"
                         class="block w-full py-4">Services</a></li>
-                <li class="px-10 text-white hover:bg-blue1"><a href="contact.html" class="block w-full py-4">Contact</a>
+                <li class="px-10 text-white hover:bg-blue1"><a href="about-ocs.html" class="block w-full py-4">OCS</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue1"><a href="experts.html" class="block w-full py-4">Experts</a>
                 </li>
                 <li class="px-10 py-4 text-white hover:bg-blue1 hover:scale-105">
                     <div class="flex justify-between flex-grow">
@@ -106,304 +104,84 @@
         </svg>
     </button>
 
-    <!-- Link boxes in grid -->
-    <header class="mb-20 p-10">
-        <div class="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3 
-        gap-x-4 gap-y-5 2xl:gap-x-8 2xl:gap-y-8 
-        revealLoad fade-left" id="gridContainer">
-            <!-- Box 1 -->
-            <div class="h-auto 
-            bg-blue1 text-white
-            hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan ease animate-on-scroll
-        ">
-                <h3 class="ml-5 mt-5 mb-4 text-xl text-xl font-semibold">Lorem ipsum dolor</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sit ame</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">adipiscing elit</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Sed</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 2 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">in laoreet</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">lorem varius at</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Donecauctor magna</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sagittis</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 3 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Suspendisse a interdum lorem</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Morbi commodo</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Suspendisse</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">elementum consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">eleifend</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 4 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">non fringilla efficitur</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Ut lacinia ut est</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">vulputate est</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">pellentesque dsll</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 5 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Nam porttitor risustfelis fermentum</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">nunc tristique</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">felis varius fermentum</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">lobortis interdu</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">risus elementum consectetur</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 6 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">ehicula pellentesque</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">hasellus si</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">interdum</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">ullamcorper nec</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">pellentesque</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 7 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Lorem ipsum dolor</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sit ame</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">adipiscing elit</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Sed</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 8 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">in laoreet</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">lorem varius at</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Donecauctor magna</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sagittis</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 9 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Lorem ipsum dolor</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sit ame</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">adipiscing elit</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Sed</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 10 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">vestibulum consectetur mauris</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">in laoreet</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">lorem varius at</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Donecauctor magna</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">sagittis</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 11 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">Suspendisse a interdum lorem</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Morbi commodo</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Suspendisse</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">elementum consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">eleifend</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Box 12 -->
-            <div
-                class="h-auto bg-blue1 text-white  ease hover:bg-blue2 hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
-                <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">non fringilla efficitur</h3>
-                <ul>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">Ut lacinia ut est</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">consectetur</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">vulputate est</a>
-                    </li>
-                    <li class="pl-5 py-2.5 flex items-center hover:bg-blue1">
-                        <!-- <span class="inline-block w-1.5 h-1.5 bg-white rounded-full mr-2"></span> -->
-                        <a href="#" class="w-full text-base text-white">pellentesque dsll</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="px-10 pt-18 md:custom-height relative">
+        <!-- Background Image Wrapper with Opacity -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-60"
+            style="background-image: url('images/electrification.jpg'); background-size: cover; background-position: center;">
+        </div>
+
+        <!-- Content -->
+        <div
+            class="relative mb-40 custom-height flex flex-col justify-center items-start revealLoad fade-left">
+            <h1 class="text-6xl sm:text-9xl font-extrabold font-mono text-white">Siemens</h1>
+            <h2 class="text-4xl sm:text-6xl font-extrabold font-mono text-cyan tracking-wider">COBRA</h2>
+            <h2 class="text-4xl sm:text-6xl font-extrabold font-mono text-black"></h2>
+        </div>
+
+        <!-- SVG Arrow -> The arrow appears when the page is reloaded-->
+        <div class="scroll-to-more left-1/2 bottom-10 flex justify-center items-center absolute bounceAnimation"
+            id="scrollArrowContainer">
+            <img src="icons/arrow-dark.svg" alt="" class="rotate-90">
         </div>
     </header>
 
+
+
+
+
+
+
+
+    <!-- Home page text. Haven't written leading-6 here -->
+    <section class="mb-20 px-10 
+      text-white text-base text-justify text-ellipsis tracking-wide leading-7 font-thin overflow-hidden 
+      lg:text-lg 
+      reveal fade-bottom">
+        <p class="pb-5">
+            Siemens COBRA, a division of Siemens Technology and Services Pvt Ltd, stands for Competitive Operational
+            Business for Rail Automation (COBRA). As part of the renowned Siemens Group, known for its expertise in
+            engineering, technology, and industrial solutions, COBRA is dedicated txo delivering innovative and
+            competitive railway automation solutions. With operations in multiple countries and a network of commercial
+            partners, COBRA has established a strong presence in the European and Asian markets. The division focuses on
+            various aspects of railway automation, including signaling, control systems, and communication networks. By
+            leveraging its expertise and Siemens' extensive resources, COBRA enhances the safety, efficiency, and
+            reliability of rail systems.
+        </p>
+        <p class="pb-5">
+            COBRA emphasizes providing cutting-edge solutions that meet the evolving demands of the rail industry.
+            Through continuous innovation and digitalization, COBRA embraces the latest technologies and advancements to
+            drive the transformation of railway automation. With a customer-centric mindset, COBRA works closely with
+            rail operators and industry stakeholders to understand their specific needs and deliver tailored solutions.
+            Through collaborative partnerships, COBRA ensures the successful implementation of projects, contributing to
+            the development of efficient, sustainable, and future-ready rail networks.
+        </p>
+        <p>
+            Energy in flow – cost-effective and absolutely reliable. Open up new lines and increase capacity, cut costs
+            and link networks: high-performance, state-of-the-art rail electrification meets all the expectations of
+            rail infrastructure operators today. And it's a central component of the end-to-end networked, digital
+            infrastructure of tomorrow.
+        </p>
+    </section>
+
     <!-- Carousel -->
-    <div class="carousel-container reveal fade-right">
+    <div class="mb-48 carousel-container reveal fade-right">
         <div id="carousel" class="carousel">
             <div class="carousel-inner">
+                <!-- Image 1 -->
                 <div class="carousel-item">
                     <img src="images/carousel-img-1.png" alt="Image 1">
                 </div>
+                <!-- Image 2 -->
                 <div class="carousel-item">
                     <img src="images/carousel-img-2.png" alt="Image 2">
                 </div>
+                <!-- Image 3 -->
                 <div class="carousel-item">
                     <img src="images/carousel-img-3.png" alt="Image 3">
+                </div>
+                <!-- Image 4 -->
+                <div class="carousel-item">
+                    <img src="images/carousel-img-4.jpg" alt="Image 4">
                 </div>
             </div>
         </div>
@@ -414,34 +192,10 @@
 
 
 
-    <!-- Home page text. Haven't written leading-6 here -->
-    <section class="mt-10 mb-72 px-10 
-        text-white text-base text-justify text-ellipsis tracking-wide leading-7 font-thin overflow-hidden 
-        lg:text-lg 
-        reveal fade-bottom">
-        <p class="pb-5">
-            Siemens COBRA, a division of Siemens Technology and Services Pvt Ltd, stands for Competitive Operational
-            Business for Rail Automation (COBRA). As part of the renowned Siemens Group, known for its expertise in
-            engineering, technology, and industrial solutions, COBRA is dedicated to delivering innovative and
-            competitive railway automation solutions. With operations in multiple countries and a network of commercial
-            partners, COBRA has established a strong presence in the European and Asian markets. The division focuses on
-            various aspects of railway automation, including signaling, control systems, and communication networks. By
-            leveraging its expertise and Siemens' extensive resources, COBRA enhances the safety, efficiency, and
-            reliability of rail systems.
-        </p>
-        <p>
-            COBRA emphasizes providing cutting-edge solutions that meet the evolving demands of the rail industry.
-            Through continuous innovation and digitalization, COBRA embraces the latest technologies and advancements to
-            drive the transformation of railway automation. With a customer-centric mindset, COBRA works closely with
-            rail operators and industry stakeholders to understand their specific needs and deliver tailored solutions.
-            Through collaborative partnerships, COBRA ensures the successful implementation of projects, contributing to
-            the development of efficient, sustainable, and future-ready rail networks.
-        </p>
 
-    </section>
 
     <!-- Profile image and PowerBI statistics -->
-    <section class="mb-4 px-10 py-20 
+    <!-- <section class="mb-4 px-10 py-20 
     text-white bg-white 
     flex max-md:flex-col max-md:justify-around md:justify-between items-center  
     reveal fade-left">
@@ -458,12 +212,12 @@
         shrink
         flex justify-center items-center"><span>PowerBI statistics of individual</span>
         </div>
-    </section>
+    </section> -->
 
     <!-- Horizontal line -->
-    <div class="h-px w-full 
+    <!-- <div class="h-px w-full 
     mb-80 
-    bg-white text-white"></div>
+    bg-white text-white"></div> -->
 
     <!-- Footer for other links -->
     <footer class="p-10 text-white reveal fade-right">
@@ -484,24 +238,44 @@
             <ul class="flex max-md:flex-col max-md:items-start md:flex-row md:justify-start 
             text-white text-base text-ellipsis font-thin tracking-wide">
                 <li class="mb-4 md:mr-16">
-                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank"><img
-                            src="icons/web-icon.svg" class="inline">&nbsp;Siemens India</a>
-                </li>
-                <li class="mb-4 md:mr-16">
                     <a href="https://www.siemens.com/global/en.html" target="_blank"><img src="icons/web-icon.svg"
                             class="inline">&nbsp;Siemens Global</a>
+                </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank"><img
+                            src="icons/web-icon.svg" class="inline">&nbsp;Siemens India</a>
                 </li>
                 <li class="mb-4 md:mr-16">
                     <a href="https://myid.siemens.com/as/9oHjuGsjD2/resume/as/authorization.ping?zone=public"
                         target="_blank"><img src="icons/web-icon.svg" class="inline">&nbsp;Siemens Hello</a>
                 </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="ocs.html" target="_blank"><img src="icons/web-icon.svg" class="inline">&nbsp;COBRA-OCS</a>
+                </li> 
             </ul>
         </div>
     </footer>
 
-    <script src="frontend.js"></script>
-    <script src="app.js"></script>
-    <script src="common.js"></script>
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/carousel.js"></script>
+    <script src="javascripts/profile-icon.js"></script>
+    <script src="javascripts/move-to-top.js"></script>
+    <script src="javascripts/reveal-revealLoad.js"></script>
+    <script src="javascripts/searchbox.js"></script>
+    <script>
+        // Wait for the page to load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the arrow element by its ID
+            var arrowElement = document.getElementById("scrollArrowContainer");
+
+            // Add a class to hide the arrow after 1000ms (1 second)
+            setTimeout(function () {
+                arrowElement.classList.add("hidden");
+            }, 2000);
+        });
+    </script>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- For carousel -->
 </body>
 

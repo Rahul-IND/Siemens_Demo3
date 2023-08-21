@@ -1,0 +1,53 @@
+OCS-Contact Line Website
+Last Updated: 2010-09-17
+Developed by: Rahul Das
+Contact Email: rahuldasjec.cse@gmail.com
+Internship Duration: July 3, 2023, to September 1, 2023
+Guided by: Suneel, Bhagwat Sharma
+Technologies used: HTML, CSS, Tailwind CSS, javascript (Some code has been taken from ChatGPT)
+The website's codebase could have been more efficient if other technologies were used; however, it was decided that these technologies were the most appropriate for the project as per the developer's skillset.
+
+* The website is mainly made for two purposes-
+1. To present to stakeholders details about the delivered projects, team's expertise etc. [EXTERNAL USAGE]
+2. To use it in team meetings instead of ppts showing team productivity, project history etc. [INTERNAL USAGE]
+
+* This file serves the purpose of providing a better understanding of the file structure and code.
+
+There are four folders viz.
+1. Fonts -> Contains the file Siemens_Sans_Roman.ttf 
+            This font is used in the whole website.
+2. icons -> Contains all the icons (as well as logos) used in the website
+            Most of them are in svg format
+3. images -> Contains all the images used throughout the website
+4. javascripts -> This folder contains all the JavaScript files. 
+                    Each JavaScript file is dedicated to a specific component. 
+                    Whenever a component is used on a webpage, the corresponding JavaScript file is imported to provide its functionality.
+        
+HTML files-
+[External Usage]
+1. index.html-> This is the homepage of the website.
+                From homepage, we can navigate to these pages - services, about, experts
+2. services.html -> Contains services of Electrification segment under Siemens COBRA
+                    Whenever a service is clicked on, user is redirected to Siemens Official Website
+3. about.html -> Contains details about OCS team
+                    Projects delivered by OCS team
+                    Whenever a project is clicked on, new page containing project details will show up
+                    'Learn More' button redirects to OCS website made for internal usage.
+4. experts.html -> Contains details about employees
+
+
+[Internal Usage]
+5. ocs.html -> Home page for ocs-contact line website
+                From homepage, we can navigate to these pages - important links, productivity and project involvement
+6. links.html -> Contains all the links frequently required
+7. productivity.html -> 
+8. project-involvement.html -> 
+
+CSS files-
+1. input.css ->
+2. output.css ->
+
+js file -
+1. tailwind.config.js -> 
+Know more about tailwind installation: https://tailwindcss.com/docs/installation
+Know more about tailwind application: https://tailwindcss.com/docs/utility-first and many more 
